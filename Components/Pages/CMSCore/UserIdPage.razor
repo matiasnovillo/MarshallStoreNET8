@@ -1,21 +1,21 @@
 
 @page "/CMSCore/UserPage/{UserId:int}"
-@using EmptyProject.Areas.CMSCore.Repositories;
+@using MarshallStore.Areas.CMSCore.Repositories;
 @inject UserRepository userRepository;
 
 @if (UserId == 0)
 {
-    <PageTitle>Add user - EmptyProject</PageTitle>
+    <PageTitle>Add user - MarshallStore</PageTitle>
 }
 else
 {
-    <PageTitle>Edit user - EmptyProject</PageTitle>
+    <PageTitle>Edit user - MarshallStore</PageTitle>
 }
 
-<EmptyProject.Components.Layout.NavBarVerticalDashboard lstMenuResult="lstMenuResult"></EmptyProject.Components.Layout.NavBarVerticalDashboard>
+<MarshallStore.Components.Layout.NavBarVerticalDashboard lstMenuResult="lstMenuResult"></MarshallStore.Components.Layout.NavBarVerticalDashboard>
 
 <div class="main-content position-relative max-height-vh-100 h-100">
-    <EmptyProject.Components.Layout.NavBarHorizontalDashboard></EmptyProject.Components.Layout.NavBarHorizontalDashboard>
+    <MarshallStore.Components.Layout.NavBarHorizontalDashboard></MarshallStore.Components.Layout.NavBarHorizontalDashboard>
     <div class="container-fluid px-2 px-md-4">
         <div class="page-header min-height-300 border-radius-xl mt-4"
              style="background-image: url('assets/img/illustrations/Landscape2.jpg');">
@@ -114,7 +114,7 @@ else
         </div>
     </div>
 
-    <EmptyProject.Components.Layout.FooterDashboard></EmptyProject.Components.Layout.FooterDashboard>
+    <MarshallStore.Components.Layout.FooterDashboard></MarshallStore.Components.Layout.FooterDashboard>
 </div>
 
 @code {
@@ -219,7 +219,7 @@ else
                 MessageForForm = $@"Please, select a role";
             }
 
-            User.Password = EmptyProject.Library.Security.EncodeString(User.Password);
+            User.Password = MarshallStore.Library.Security.EncodeString(User.Password);
 
             if (UserId == 0)
             {

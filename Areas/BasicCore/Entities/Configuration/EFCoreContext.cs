@@ -1,9 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using EmptyProject.Areas.CMSCore.Entities;
-using EmptyProject.Areas.CMSCore.Entities.EntitiesConfiguration;
-using EmptyProject.Areas.BasicCore.Entities.EntitiesConfiguration;
+using MarshallStore.Areas.CMSCore.Entities;
+using MarshallStore.Areas.CMSCore.Entities.EntitiesConfiguration;
+using MarshallStore.Areas.BasicCore.Entities.EntitiesConfiguration;
 
-namespace EmptyProject.Areas.BasicCore.Entities.Configuration
+namespace MarshallStore.Areas.BasicCore.Entities.Configuration
 {
     public class EFCoreContext : DbContext
     {
@@ -16,7 +16,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
         public DbSet<Failure> Failure { get; set; }
         public DbSet<Parameter> Parameter { get; set; }
 
-        //EmptyProject
+        //MarshallStore
 
         public EFCoreContext(IConfiguration configuration)
         {
@@ -28,7 +28,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
             try
             {
                 string ConnectionStringDevelopment = "data source =.; " +
-                    "initial catalog = EmptyProject; " +
+                    "initial catalog = MarshallStore; " +
                     "Integrated Security = SSPI;" +
                     " MultipleActiveResultSets=True;" +
                     "Pooling=false;" +
@@ -42,7 +42,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
                 string ConnectionStringProduction = "Password=5wn9IyD)t3ZL-4;" +
                     "Persist Security Info=True;" +
                     "User ID=fiyista1_Admin;" +
-                    "Initial Catalog=fiyista1_EmptyProject;" +
+                    "Initial Catalog=fiyista1_MarshallStore;" +
                     "Data Source=www4.baehost.com;" +
                     "TrustServerCertificate=True";
 
@@ -63,7 +63,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
                 modelBuilder.ApplyConfiguration(new FailureConfiguration());
                 modelBuilder.ApplyConfiguration(new ParameterConfiguration());
 
-                //EmptyProject
+                //MarshallStore
 
                 #region User
                 modelBuilder.Entity<User>().HasData(new User
@@ -393,7 +393,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
                 modelBuilder.Entity<Menu>().HasData(new Menu
                 {
                     MenuId = 15,
-                    Name = "EmptyProject",
+                    Name = "MarshallStore",
                     MenuFatherId = 0,
                     Order = 0,
                     URLPath = "",
@@ -411,7 +411,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
                     Name = "BlogPost",
                     MenuFatherId = 15,
                     Order = 0,
-                    URLPath = "/EmptyProject/BlogPostPage",
+                    URLPath = "/MarshallStore/BlogPostPage",
                     IconURLPath = "",
                     Active = true,
                     DateTimeCreation = DateTime.Now,
@@ -426,7 +426,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
                     Name = "Perfil",
                     MenuFatherId = 15,
                     Order = 0,
-                    URLPath = "/EmptyProject/UserProfilePage",
+                    URLPath = "/MarshallStore/UserProfilePage",
                     IconURLPath = "",
                     Active = true,
                     DateTimeCreation = DateTime.Now,
@@ -441,7 +441,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
                     Name = "Agenda",
                     MenuFatherId = 15,
                     Order = 0,
-                    URLPath = "/EmptyProject/AgendaPage",
+                    URLPath = "/MarshallStore/AgendaPage",
                     IconURLPath = "",
                     Active = true,
                     DateTimeCreation = DateTime.Now,
@@ -456,7 +456,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
                     Name = "CarouselTemasDeInteres",
                     MenuFatherId = 15,
                     Order = 0,
-                    URLPath = "/EmptyProject/CarouselTemasDeInteresPage",
+                    URLPath = "/MarshallStore/CarouselTemasDeInteresPage",
                     IconURLPath = "",
                     Active = true,
                     DateTimeCreation = DateTime.Now,
@@ -471,7 +471,7 @@ namespace EmptyProject.Areas.BasicCore.Entities.Configuration
                     Name = "MarketplaceServices",
                     MenuFatherId = 15,
                     Order = 0,
-                    URLPath = "/EmptyProject/MarketplacePostServicePage",
+                    URLPath = "/MarshallStore/MarketplacePostServicePage",
                     IconURLPath = "",
                     Active = true,
                     DateTimeCreation = DateTime.Now,

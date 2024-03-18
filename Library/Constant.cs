@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace EmptyProject.Library
+namespace MarshallStore.Library
 {
     public static class Constant
     {

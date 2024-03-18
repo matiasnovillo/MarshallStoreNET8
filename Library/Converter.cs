@@ -4,7 +4,7 @@ using System;
 using System.Text.Json.Serialization;
 using System.Text.Json;
 
-namespace EmptyProject.Library
+namespace MarshallStore.Library
 {
     public static class Converter
     {

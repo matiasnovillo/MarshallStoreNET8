@@ -1,5 +1,5 @@
-using EmptyProject.Areas.BasicCore.Entities;
-using EmptyProject.Areas.BasicCore.DTOs;
+using MarshallStore.Areas.BasicCore.Entities;
+using MarshallStore.Areas.BasicCore.DTOs;
 using System.Data;
 
 /*
@@ -13,7 +13,7 @@ using System.Data;
  * 
  */
 
-namespace EmptyProject.Areas.BasicCore.Interfaces
+namespace MarshallStore.Areas.BasicCore.Interfaces
 {
     public interface IFailureRepository
     {

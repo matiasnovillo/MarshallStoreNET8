@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace EmptyProject.Library
+namespace MarshallStore.Library
 {
     public static class Math
     {

@@ -11,7 +11,7 @@
  * 
  */
 
-namespace EmptyProject.Areas.BasicCore.Entities
+namespace MarshallStore.Areas.BasicCore.Entities
 {
     public class Parameter
     {

@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore;
  * 
  */
 
-namespace EmptyProject.Areas.CMSCore.Entities.EntitiesConfiguration
+namespace MarshallStore.Areas.CMSCore.Entities.EntitiesConfiguration
 {
     public class RoleConfiguration : IEntityTypeConfiguration<Role>
     {

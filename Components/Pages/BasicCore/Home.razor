@@ -1,18 +1,18 @@
 ﻿@page "/"
 
-@using EmptyProject.Areas.CMSCore.Entities;
-@using EmptyProject.Areas.CMSCore.Repositories;
-@using EmptyProject.Components.Shared;
+@using MarshallStore.Areas.CMSCore.Entities;
+@using MarshallStore.Areas.CMSCore.Repositories;
+@using MarshallStore.Components.Shared;
 @inject UserRepository userRepository;
 @inject StateContainer StateContainer
 
-<PageTitle>Home - EmptyProject</PageTitle>
+<PageTitle>Home - MarshallStore</PageTitle>
 
-<EmptyProject.Components.Layout.NavBarHorizontalHome></EmptyProject.Components.Layout.NavBarHorizontalHome>
+<MarshallStore.Components.Layout.NavBarHorizontalHome></MarshallStore.Components.Layout.NavBarHorizontalHome>
 
-<h1>EmptyProject</h1>
+<h1>MarshallStore</h1>
 
-<EmptyProject.Components.Layout.FooterHome></EmptyProject.Components.Layout.FooterHome>
+<MarshallStore.Components.Layout.FooterHome></MarshallStore.Components.Layout.FooterHome>
 
 @code{
     protected override void OnInitialized()

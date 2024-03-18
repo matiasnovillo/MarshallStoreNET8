@@ -1,24 +1,24 @@
 
 @page "/CMSCore/MenuPage/{MenuId:int}"
 
-@using EmptyProject.Areas.CMSCore.Repositories;
-@using EmptyProject.Areas.CMSCore.Entities;
-@using EmptyProject.Areas.CMSCore.DTOs;
+@using MarshallStore.Areas.CMSCore.Repositories;
+@using MarshallStore.Areas.CMSCore.Entities;
+@using MarshallStore.Areas.CMSCore.DTOs;
 @inject MenuRepository menuRepository;
 
 @if (MenuId == 0)
 {
-    <PageTitle>Add menu - EmptyProject</PageTitle>
+    <PageTitle>Add menu - MarshallStore</PageTitle>
 }
 else
 {
-    <PageTitle>Edit menu - EmptyProject</PageTitle>
+    <PageTitle>Edit menu - MarshallStore</PageTitle>
 }
 
-<EmptyProject.Components.Layout.NavBarVerticalDashboard lstMenuResult="lstMenuResult"></EmptyProject.Components.Layout.NavBarVerticalDashboard>
+<MarshallStore.Components.Layout.NavBarVerticalDashboard lstMenuResult="lstMenuResult"></MarshallStore.Components.Layout.NavBarVerticalDashboard>
 
 <div class="main-content position-relative max-height-vh-100 h-100">
-    <EmptyProject.Components.Layout.NavBarHorizontalDashboard></EmptyProject.Components.Layout.NavBarHorizontalDashboard>
+    <MarshallStore.Components.Layout.NavBarHorizontalDashboard></MarshallStore.Components.Layout.NavBarHorizontalDashboard>
     <div class="container-fluid px-2 px-md-4">
         <div class="page-header min-height-300 border-radius-xl mt-4"
              style="background-image: url('assets/img/illustrations/Landscape2.jpg');">
@@ -140,7 +140,7 @@ else
         </div>
     </div>
 
-    <EmptyProject.Components.Layout.FooterDashboard></EmptyProject.Components.Layout.FooterDashboard>
+    <MarshallStore.Components.Layout.FooterDashboard></MarshallStore.Components.Layout.FooterDashboard>
 </div>
 
 @code {

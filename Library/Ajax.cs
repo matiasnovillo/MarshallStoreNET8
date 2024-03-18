@@ -1,4 +1,4 @@
-﻿namespace EmptyProject.Library
+﻿namespace MarshallStore.Library
 {
     public class Ajax
     {

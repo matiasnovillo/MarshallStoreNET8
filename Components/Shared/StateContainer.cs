@@ -1,6 +1,6 @@
-﻿using EmptyProject.Areas.CMSCore.Entities;
+﻿using MarshallStore.Areas.CMSCore.Entities;
 
-namespace EmptyProject.Components.Shared
+namespace MarshallStore.Components.Shared
 {
     public class StateContainer
     {

@@ -1,4 +1,4 @@
-﻿namespace EmptyProject.Areas.CMSCore.Entities
+﻿namespace MarshallStore.Areas.CMSCore.Entities
 {
     public class RoleMenu
     {

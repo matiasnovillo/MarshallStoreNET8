@@ -1,5 +1,5 @@
-using EmptyProject.Areas.CMSCore.Entities;
-using EmptyProject.Areas.CMSCore.DTOs;
+using MarshallStore.Areas.CMSCore.Entities;
+using MarshallStore.Areas.CMSCore.DTOs;
 using System.Data;
 
 /*
@@ -13,7 +13,7 @@ using System.Data;
  * 
  */
 
-namespace EmptyProject.Areas.CMSCore.Interfaces
+namespace MarshallStore.Areas.CMSCore.Interfaces
 {
     public interface IUserRepository
     {

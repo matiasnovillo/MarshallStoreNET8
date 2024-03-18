@@ -1,4 +1,4 @@
-using EmptyProject.Areas.BasicCore.Entities;
+using MarshallStore.Areas.BasicCore.Entities;
 
 /*
  * GUID:e6c09dfe-3a3e-461b-b3f9-734aee05fc7b
@@ -11,7 +11,7 @@ using EmptyProject.Areas.BasicCore.Entities;
  * 
  */
 
-namespace EmptyProject.Areas.BasicCore.DTOs
+namespace MarshallStore.Areas.BasicCore.DTOs
 {
     public class paginatedFailureDTO
     {

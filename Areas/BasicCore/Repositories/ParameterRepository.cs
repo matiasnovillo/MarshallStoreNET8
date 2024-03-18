@@ -1,9 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
-using EmptyProject.Areas.BasicCore.Entities;
-using EmptyProject.Areas.BasicCore.Entities.Configuration;
-using EmptyProject.Areas.BasicCore.DTOs;
-using EmptyProject.Areas.BasicCore.Interfaces;
+using MarshallStore.Areas.BasicCore.Entities;
+using MarshallStore.Areas.BasicCore.Entities.Configuration;
+using MarshallStore.Areas.BasicCore.DTOs;
+using MarshallStore.Areas.BasicCore.Interfaces;
 using System.Data;
 
 /*
@@ -17,7 +17,7 @@ using System.Data;
  * 
  */
 
-namespace EmptyProject.Areas.BasicCore.Repositories
+namespace MarshallStore.Areas.BasicCore.Repositories
 {
     public class ParameterRepository : IParameterRepository
     {

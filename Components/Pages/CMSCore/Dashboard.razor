@@ -1,8 +1,8 @@
 ﻿@page "/Dashboard"
 
-@using EmptyProject.Areas.CMSCore.Entities;
-@using EmptyProject.Areas.CMSCore.Repositories;
-@using EmptyProject.Components.Shared;
+@using MarshallStore.Areas.CMSCore.Entities;
+@using MarshallStore.Areas.CMSCore.Repositories;
+@using MarshallStore.Components.Shared;
 @inject UserRepository userRepository;
 @inject RoleRepository roleRepository;
 @inject MenuRepository menuRepository;
@@ -10,12 +10,12 @@
 @inject StateContainer StateContainer;
 @inject NavigationManager NavigationManager;
 
-<PageTitle>Tablero de control - EmptyProject</PageTitle>
+<PageTitle>Tablero de control - MarshallStore</PageTitle>
 
-<EmptyProject.Components.Layout.NavBarVerticalDashboard lstMenuResult="lstMenuResult"></EmptyProject.Components.Layout.NavBarVerticalDashboard>
+<MarshallStore.Components.Layout.NavBarVerticalDashboard lstMenuResult="lstMenuResult"></MarshallStore.Components.Layout.NavBarVerticalDashboard>
 
 <div class="main-content position-relative max-height-vh-100 h-100">
-    <EmptyProject.Components.Layout.NavBarHorizontalDashboard></EmptyProject.Components.Layout.NavBarHorizontalDashboard>
+    <MarshallStore.Components.Layout.NavBarHorizontalDashboard></MarshallStore.Components.Layout.NavBarHorizontalDashboard>
     <div class="container-fluid px-2 px-md-4">
         <div class="page-header min-height-300 border-radius-xl mt-4"
              style="background-image: url('assets/img/illustrations/Landscape2.jpg');">
@@ -75,12 +75,12 @@
             </div>
         </div>
     </div>
-<EmptyProject.Components.Layout.FooterDashboard></EmptyProject.Components.Layout.FooterDashboard>
+<MarshallStore.Components.Layout.FooterDashboard></MarshallStore.Components.Layout.FooterDashboard>
 </div>
 
 @code{
     #region Properties
-    public EmptyProject.Areas.CMSCore.Entities.User? User { get; set; } = new();
+    public MarshallStore.Areas.CMSCore.Entities.User? User { get; set; } = new();
 
     public List<Menu> lstMenuResult { get; set; } = [];
     #endregion

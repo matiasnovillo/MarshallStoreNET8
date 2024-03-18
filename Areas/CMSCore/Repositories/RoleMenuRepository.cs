@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Text.RegularExpressions;
-using EmptyProject.Areas.CMSCore.DTOs;
-using EmptyProject.Areas.CMSCore.Entities;
-using EmptyProject.Areas.BasicCore.Entities.Configuration;
+using MarshallStore.Areas.CMSCore.DTOs;
+using MarshallStore.Areas.CMSCore.Entities;
+using MarshallStore.Areas.BasicCore.Entities.Configuration;
 
-namespace EmptyProject.Areas.CMSCore.Repositories
+namespace MarshallStore.Areas.CMSCore.Repositories
 {
     public class RoleMenuRepository
     {

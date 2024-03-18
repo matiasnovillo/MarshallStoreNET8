@@ -1,6 +1,6 @@
-﻿using EmptyProject.Areas.CMSCore.Entities;
+﻿using MarshallStore.Areas.CMSCore.Entities;
 
-namespace EmptyProject.Areas.CMSCore.DTOs
+namespace MarshallStore.Areas.CMSCore.DTOs
 {
     public class paginatedRoleMenuDTO
     {

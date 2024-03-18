@@ -1,18 +1,18 @@
 ﻿@page "/Login/{NextPageToSetUp}"
 
-@using EmptyProject.Areas.CMSCore.Entities;
-@using EmptyProject.Areas.CMSCore.Repositories;
-@using EmptyProject.Components.Shared;
+@using MarshallStore.Areas.CMSCore.Entities;
+@using MarshallStore.Areas.CMSCore.Repositories;
+@using MarshallStore.Components.Shared;
 @inject UserRepository userRepository;
 @inject StateContainer StateContainer;
 @inject NavigationManager NavigationManager;
 
-<PageTitle>Login - EmptyProject</PageTitle>
+<PageTitle>Login - MarshallStore</PageTitle>
 
 <div class="container position-sticky z-index-sticky top-0">
     <div class="row">
         <div class="col-12">
-            <EmptyProject.Components.Layout.NavBarHorizontalHome></EmptyProject.Components.Layout.NavBarHorizontalHome>
+            <MarshallStore.Components.Layout.NavBarHorizontalHome></MarshallStore.Components.Layout.NavBarHorizontalHome>
         </div>
     </div>
 </div>
@@ -100,7 +100,7 @@ loading="lazy">
     </div>
 </div>
 
-<EmptyProject.Components.Layout.FooterHome></EmptyProject.Components.Layout.FooterHome>
+<MarshallStore.Components.Layout.FooterHome></MarshallStore.Components.Layout.FooterHome>
 
 @code {
     #region Properties
@@ -145,7 +145,7 @@ loading="lazy">
         try
         {
             //Encrypt password
-            string EncryptedPassword = EmptyProject.Library.Security
+            string EncryptedPassword = MarshallStore.Library.Security
                                             .EncodeString(User.Password);
 
             //Get user by email and password

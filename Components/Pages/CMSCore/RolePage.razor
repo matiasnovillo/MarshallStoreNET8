@@ -1,17 +1,17 @@
 
 @page "/CMSCore/RolePage"
 
-@using EmptyProject.Areas.CMSCore.Repositories;
-@using EmptyProject.Areas.CMSCore.Entities;
-@using EmptyProject.Areas.CMSCore.DTOs;
+@using MarshallStore.Areas.CMSCore.Repositories;
+@using MarshallStore.Areas.CMSCore.Entities;
+@using MarshallStore.Areas.CMSCore.DTOs;
 @inject RoleRepository roleRepository;
 
-<PageTitle>Query Role - EmptyProject</PageTitle>
+<PageTitle>Query Role - MarshallStore</PageTitle>
 
-<EmptyProject.Components.Layout.NavBarVerticalDashboard lstMenuResult="lstMenuResult"></EmptyProject.Components.Layout.NavBarVerticalDashboard>
+<MarshallStore.Components.Layout.NavBarVerticalDashboard lstMenuResult="lstMenuResult"></MarshallStore.Components.Layout.NavBarVerticalDashboard>
 
 <div class="main-content position-relative max-height-vh-100 h-100">
-    <EmptyProject.Components.Layout.NavBarHorizontalDashboard></EmptyProject.Components.Layout.NavBarHorizontalDashboard>
+    <MarshallStore.Components.Layout.NavBarHorizontalDashboard></MarshallStore.Components.Layout.NavBarHorizontalDashboard>
     <div class="container-fluid px-2 px-md-4">
         <div class="page-header min-height-300 border-radius-xl mt-4"
              style="background-image: url('assets/img/illustrations/Landscape2.jpg');">
@@ -254,7 +254,7 @@
             </div>
         </div>
     </div>
-    <EmptyProject.Components.Layout.FooterDashboard></EmptyProject.Components.Layout.FooterDashboard>
+    <MarshallStore.Components.Layout.FooterDashboard></MarshallStore.Components.Layout.FooterDashboard>
 </div>
 
 @code {
@@ -681,7 +681,7 @@
         {
             //Set initial state
             ErrorMessage = "";
-            string ProjectName = "EmptyProject";
+            string ProjectName = "MarshallStore";
             string Table = "Role";
             var Renderer = new HtmlToPdf();
             string RowsAsHTML = "";
